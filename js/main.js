@@ -15,6 +15,8 @@ var frase = "";
 var resultado = [];
 function registro() {
     frase = nuevaFrase.value;
+    frase = frase.toUpperCase();
+    console.log(frase)
     nuevaFrase.disabled = true;
     agregar.disabled = true;
     button.disabled = false;
@@ -41,9 +43,11 @@ function escribirTexto(x, y, texto) {
 function adivinar() {
     var t = false;
     p = 110;
+    var s = input.value;
+    s = s.toUpperCase();
     for (var posicion = 0; posicion < frase.length; posicion++) {
 
-        if (frase[posicion] == input.value || frase == input.value) {
+        if (frase[posicion] == s || frase == s) {
             escribirTexto(p, 340, frase[posicion]);
             input.focus();
             t = true;

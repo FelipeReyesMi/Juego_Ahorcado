@@ -22,9 +22,11 @@ h2{
 .cuadro{
     color: blueviolet;
     font-size: 20px;
+    text-transform: uppercase;
 }
 .nuevafrase{
     font-size: 20px;
+    text-transform: uppercase;
 }
 .go,.ver,.agregar,.reiniciar{
     font-size: 20px;
