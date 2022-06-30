@@ -114,7 +114,7 @@ function dibujar() {
     if (contador == 7) {
         linea(330, 125, 350, 110, "black", 5); 
     }
-    if(contador == 80){
+    if(contador == 8){
         linea(323, 92, 328, 85, "black", 2);
         linea(323, 85, 328, 92, "black", 2);
         linea(333, 92, 338, 85, "black", 2);
