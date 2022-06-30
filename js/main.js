@@ -13,6 +13,7 @@ ver.disabled = true;
 button.disabled = true;
 var frase = "";
 var resultado = [];
+
 function registro() {
     frase = nuevaFrase.value;
     frase = frase.toUpperCase();
@@ -71,9 +72,9 @@ function adivinar() {
     }
     while (contador <= 8) {
         if (contador == 8) {
-            escribirTexto(500, 100, "Fin del Juego");
-            escribirTexto(520, 100, "La palabra a adivinar era: " + frase.value);
-
+            escribirTexto(400, 100, "Fin del Juego");
+            escribirTexto(400, 150, "La palabra a adivinar era: ");
+            escribirTexto(400, 200, frase);
             input.disabled = true;
             ver.disabled = true;
             button.disabled = true;
