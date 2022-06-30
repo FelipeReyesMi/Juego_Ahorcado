@@ -7,7 +7,7 @@ var nuevaFrase = document.querySelector(".nuevafrase");
 var agregar = document.querySelector(".agregar");
 var reiniciar = document.querySelector(".reiniciar");
 var contador = 1;
-var x = 100;
+var x = 10;
 input.disabled = true;
 ver.disabled = true;
 button.disabled = true;
@@ -42,7 +42,7 @@ function escribirTexto(x, y, texto) {
 
 function adivinar() {
     var t = false;
-    p = 110;
+    p = 10;
     var s = input.value;
     s = s.toUpperCase();
     for (var posicion = 0; posicion < frase.length; posicion++) {
@@ -55,7 +55,7 @@ function adivinar() {
             resultado.push(frase[posicion]);
 
         }
-        p = p + 51;
+        p = p + 41;
     }
     input.value = "";
     if (resultado.length == frase.length) {
@@ -128,10 +128,10 @@ function circulo() {
 function comenzar() {
     contador = 1;
     pantalla.width = pantalla.width;
-    x = 100;
+    x = 10;
     for (var i = 1; i <= frase.length; i++) {
-        linea(x, 350, x + 40, 350, "blue", 5);
-        x = x + 50;
+        linea(x, 350, x + 30, 350, "blue", 5);
+        x = x + 40;
     }
     button.disabled = true;
     input.disabled = false;
