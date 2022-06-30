@@ -1,0 +1,39 @@
+.frase{
+    position: absolute;
+    margin-top: 20px;
+}
+body{
+    background: url("https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52767.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cuadro{
+    color: blueviolet;
+    font-size: 20px;
+}
+.nuevafrase{
+    font-size: 20px;
+}
+.go,.ver,.agregar,.reiniciar{
+    font-size: 20px;
+}
+.juego{
+    background: url("https://cdn.create.vista.com/api/media/medium/179826500/stock-photo-close-shot-pastel-colors-papers?token=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
