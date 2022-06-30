@@ -10,6 +10,7 @@ var contador = 1;
 var x = 100;
 input.disabled = true;
 ver.disabled = true;
+button.disabled = true;
 var frase = "";
 var resultado = [];
 function registro() {
