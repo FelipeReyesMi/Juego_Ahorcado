@@ -72,6 +72,8 @@ function adivinar() {
     while (contador <= 8) {
         if (contador == 8) {
             escribirTexto(500, 100, "Fin del Juego");
+            escribirTexto(520, 100, "La palabra a adivinar era: " + frase.value);
+
             input.disabled = true;
             ver.disabled = true;
             button.disabled = true;
