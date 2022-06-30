@@ -6,7 +6,7 @@ var input = document.querySelector(".cuadro");
 var nuevaFrase = document.querySelector(".nuevafrase");
 var agregar = document.querySelector(".agregar");
 var reiniciar = document.querySelector(".reiniciar");
-var contador = 1;
+var contador = 0;
 var x = 10;
 input.disabled = true;
 ver.disabled = true;
@@ -66,22 +66,25 @@ function adivinar() {
         ver.disabled = true;
         nuevaFrase.value = "";
         input.value = "";
+        button.disabled = true;
 
     }
-    console.log(resultado)
-    while (contador <= 7) {
-        if (contador == 7) {
+    while (contador <= 8) {
+        if (contador == 8) {
             escribirTexto(500, 100, "Fin del Juego");
             input.disabled = true;
             ver.disabled = true;
-            button.disabled = false;
+            button.disabled = true;
         }
+        console.log(t)
         if (t == false) {
             dibujar();
             input.value = "";
             input.focus();
             contador++;
+            console.log(contador)
         }
+        
         break;
     }
 }
