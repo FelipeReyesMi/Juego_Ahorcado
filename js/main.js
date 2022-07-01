@@ -36,7 +36,7 @@ function linea(x1, y1, x2, y2, color, grosor) {
 
 function escribirTexto(x, y, texto) {
     pincel.font = "35px Arial";
-    pincel.fillStyle = "black";
+    pincel.fillStyle = "white";
     pincel.fillText(texto, x, y);
 }
 
@@ -87,7 +87,7 @@ function adivinar() {
             contador++;
             console.log(contador)
         }
-        
+
         break;
     }
 }
@@ -100,24 +100,24 @@ function dibujar() {
         circulo();
     } else
     if (contador == 3) {
-        linea(330, 106, 330, 150, "black", 5);
+        linea(330, 106, 330, 150, "white", 5);
     } else
     if (contador == 4) {
-        linea(330, 150, 310, 180, "black", 5);
+        linea(330, 150, 310, 180, "rgba(15, 82, 227, 0.78)", 5);
 
     } else
     if (contador == 5) {
-        linea(330, 150, 350, 180, "black", 5);
+        linea(330, 150, 350, 180, "rgba(15, 82, 227, 0.78)", 5);
 
     } else
     if (contador == 6) {
-        linea(330, 125, 310, 110, "black", 5);
+        linea(330, 125, 310, 110, "yellow", 5);
 
     } else
     if (contador == 7) {
-        linea(330, 125, 350, 110, "black", 5); 
+        linea(330, 125, 350, 110, "yellow", 5);
     }
-    if(contador == 8){
+    if (contador == 8) {
         linea(323, 92, 328, 85, "black", 2);
         linea(323, 85, 328, 92, "black", 2);
         linea(333, 92, 338, 85, "black", 2);
@@ -127,7 +127,7 @@ function dibujar() {
 }
 
 function circulo() {
-    pincel.fillStyle = "gray";
+    pincel.fillStyle = "yellow";
     pincel.beginPath();
     pincel.arc(330, 90, 15, 0, 2 * 3.14);
     pincel.fill();
@@ -138,7 +138,7 @@ function comenzar() {
     pantalla.width = pantalla.width;
     x = 10;
     for (var i = 1; i <= frase.length; i++) {
-        linea(x, 350, x + 30, 350, "blue", 5);
+        linea(x, 350, x + 30, 350, "black", 5);
         x = x + 40;
     }
     button.disabled = true;
@@ -148,10 +148,10 @@ function comenzar() {
 }
 
 function orca() {
-    linea(100, 250, 280, 250, "maroon", 8);
-    linea(190, 50, 190, 250, "maroon", 8);
-    linea(150, 50, 330, 50, "maroon", 8);
-    linea(330, 50, 330, 80, "maroon", 8);
+    linea(100, 250, 280, 250, "black", 8);
+    linea(190, 50, 190, 250, "black", 8);
+    linea(150, 50, 330, 50, "black", 8);
+    linea(330, 50, 330, 80, "black", 8);
 }
 
 function reinicio() {
