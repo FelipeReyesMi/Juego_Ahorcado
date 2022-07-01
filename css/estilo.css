@@ -3,23 +3,25 @@
     margin-top: 20px;
 }
 body{
-    background: url("https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52767.jpg");
+    background:url("https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 h1{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 4%;
 }
 h2{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h4{
-    color: beige;
+    color: rgba(34, 34, 31, 0.897);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -36,16 +38,26 @@ h4{
     font-size: 20px;
 }
 .juego{
-    background: url("https://cdn.create.vista.com/api/media/medium/179826500/stock-photo-close-shot-pastel-colors-papers?token=");
+    background:url("https://static.vecteezy.com/system/resources/previews/005/327/552/non_2x/violet-purple-liquid-blur-gradient-background-free-photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     margin-left: 10px;
     margin-top: 50px;
+    border-radius: 5%;
 }
 p{
     font-size: 20px;
     font-weight: 500;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.encabezado{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://img.freepik.com/vector-gratis/controles-videojuegos-estilo-neon-pared-ladrillo_24908-58916.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
 }
