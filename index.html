@@ -6,36 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=ca, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    
+
     <title>Ahorcado</title>
 </head>
 
 <body>
     <div class="encabezado">
-        <h1>Juego de Ahorcado</h1>
+        <h1>Juego del Ahorcado</h1>
     </div>
-    
-    <h2>Adivina la palabra</h2>
-    <button class="reiniciar">Reiniciar</button>
-    <p>Coloque la palabra a adivinar</p>
-    <input class="nuevafrase" type="text" pattern="^[A-Za-z]+$" maxlength="17" required>
-    <button class="agregar">Agregar</button>
-    <p>Introduce la letra</p>
-    <button class="go">Comenzar</button>
-    <input class="cuadro" type="text" pattern="^[A-Za-z]+$" maxlength="1" required>
-    <button class="ver">Verificar</button>
-    <br>
-    <canvas class="juego" width="800" height="500"></canvas>
+
+    <div class="instrucciones">
+        <h3>*Instrucciones</h3>
+        <h4>1.- El líder deberá primero ingresar la palabra a adivinar, coloca la palabra y después dará clic en el
+            botón "Agregar".</h4>
+        <h4>2.- La palabra a adivinar no debe de tener espacios ni números</h4>
+        <h4>3.- Para comenzar el juego debe de dar clic en el botón "Comenzar".</h4>
+        <h4>4.- El participante introduce la letra que él cree ser y dará en el botón "Verificar" para mostrar si la
+            letra está dentro de la palabra a adivinar.</h4>
+        <h4>5.- El participante no volverá a introducir la letra que ya adivino.</h4>
+        <h4>6.- El participante tiene solo 8 intentos para adivinar.</h4>
+        <h4>7.- Si el participante pierde, podrá reiniciar el juego dando clic en "Reiniciar".</h4>
+        <br>
+    </div>
+    <div class="principal">
+        <h2>Adivina la palabra</h2>
+        <button class="reiniciar">Reiniciar</button>
+        <div class="add">
+            <p>Coloque la palabra a adivinar, sin espacios y acentos</p>
+        <input class="nuevafrase" type="text" pattern="^[A-Za-z]+$" maxlength="17" required>
+        <button class="agregar">Agregar</button>
+
+        </div>
+        <p>Introduce la letra</p>
+            <button class="go">Comenzar</button>
+            <input class="cuadro" type="text" pattern="^[A-Za-z]+$" maxlength="1" required>
+            <button class="ver">Verificar</button>
+        
+        <br>
+        <canvas class="juego" width="800" height="500"></canvas>
+    </div>
     <script src="js/main.js"></script>
-    <h3>*Instrucciónes</h3>
-    
-    <h4>1.- El lider debera primero ingresar la palabra a adivinar, coloca la palabra y despues dara click en en boton "Agregar".</h4>
-    <h4>2.- La palabra a adivinar no debe de tener espacios ni numeros</h4>
-    <h4>3.- Para comenzar el juego debe de dar click en el boton "Comenzar".</h4>
-    <h4>4.- El participante introducira la letra que crea ser y dara en el boton "Verificar" para  mostrar si la letra esta dentro de la palabra a adivinar.</h4>
-    <h4>5.- El participante no volvera a introducir la letra que ya adivino.</h4>
-    <h4>6.- El participante tiene solo 8 intentos para adivinar.</h4>
-    <h4>7.- Si el participante pierde al adivinar, podra reiniciar el juego dando click en "Reiniciar".</h4>
+
 </body>
 
 </html>

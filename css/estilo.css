@@ -3,7 +3,7 @@
     margin-top: 20px;
 }
 body{
-    background:url("https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg");
+    background:url("https://cdn.create.vista.com/api/media/small/547719830/stock-photo-dark-soft-pastel-gradient-pink");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,39 +12,59 @@ body{
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 8vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 4%;
+    padding-top: 8%;
 }
 h2{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h4{
-    color: rgba(34, 34, 31, 0.897);
+    text-align: justify;
+    margin-left: 2%;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.cuadro{
-    color: blueviolet;
-    font-size: 20px;
-    text-transform: uppercase;
-}
 .nuevafrase{
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
+    color: rgba(13, 0, 255, 0.72);
+    width: 23%;
 }
+
+.cuadro{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgba(13, 0, 255, 0.884);
+    width: 5%;
+}
+
 .go,.ver,.agregar,.reiniciar{
     font-size: 20px;
+    height: 34px;
+    border-radius: 20%;
+}
+
+.add{
+    float: right;
+    margin-top: 3%;
+}
+
+.go:hover,.ver:hover,.agregar:hover,.reiniciar:hover{
+    background-color: rgba(4, 0, 255, 0.959);
+    color: white;
 }
 .juego{
-    background:url("https://static.vecteezy.com/system/resources/previews/005/327/552/non_2x/violet-purple-liquid-blur-gradient-background-free-photo.jpg");
+    background:url("https://fondosmil.com/th/3874.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     margin-left: 10px;
     margin-top: 50px;
     border-radius: 5%;
+    
 }
 p{
     font-size: 20px;
@@ -58,6 +78,23 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 30vh;
+    height: 40vh;
+    width: 95%;
+    margin-left: 2%;
 }
+
+.instrucciones{
+    background: url("https://fondosmil.com/fondo/1806.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.principal{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+

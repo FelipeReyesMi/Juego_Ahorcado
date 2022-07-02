@@ -13,11 +13,21 @@ ver.disabled = true;
 button.disabled = true;
 var frase = "";
 var resultado = [];
+nuevaFrase.focus();
+function validar() {
+    if (!nuevaFrase.checkValidity()) {
+        alert('Solo se aceptan letras.');
+        nuevaFrase.value = "";
+        nuevaFrase.focus();
+
+    } else {
+        registro();
+    }
+}
 
 function registro() {
     frase = nuevaFrase.value;
     frase = frase.toUpperCase();
-    console.log(frase)
     nuevaFrase.disabled = true;
     agregar.disabled = true;
     button.disabled = false;
@@ -42,53 +52,62 @@ function escribirTexto(x, y, texto) {
 
 
 function adivinar() {
-    var t = false;
-    p = 10;
-    var s = input.value;
-    s = s.toUpperCase();
-    for (var posicion = 0; posicion < frase.length; posicion++) {
 
-        if (frase[posicion] == s || frase == s) {
-            escribirTexto(p, 340, frase[posicion]);
-            input.focus();
-            t = true;
-
-            resultado.push(frase[posicion]);
-
-        }
-        p = p + 41;
-    }
-    input.value = "";
-    if (resultado.length == frase.length) {
-        escribirTexto(500, 100, "Ganaste!");
-        nuevaFrase.disabled = true;
-        agregar.disabled = true;
-        input.disabled = true;
-        ver.disabled = true;
-        nuevaFrase.value = "";
+    if (!input.checkValidity()) {
+        alert('Solo se aceptan letras.');
         input.value = "";
-        button.disabled = true;
+        input.focus();
+    } else {
 
-    }
-    while (contador <= 8) {
-        if (contador == 8) {
-            escribirTexto(400, 100, "Fin del Juego");
-            escribirTexto(400, 150, "La palabra a adivinar era: ");
-            escribirTexto(400, 200, frase);
+        var t = false;
+        p = 10;
+        var s = input.value;
+        s = s.toUpperCase();
+        for (var posicion = 0; posicion < frase.length; posicion++) {
+
+            if (frase[posicion] == s || frase == s) {
+                escribirTexto(p, 340, frase[posicion]);
+                input.focus();
+                t = true;
+
+                resultado.push(frase[posicion]);
+
+            }
+            p = p + 41;
+        }
+        input.value = "";
+        if (resultado.length == frase.length) {
+            escribirTexto(500, 100, "Ganaste!");
+            nuevaFrase.disabled = true;
+            agregar.disabled = true;
             input.disabled = true;
             ver.disabled = true;
-            button.disabled = true;
-        }
-        console.log(t)
-        if (t == false) {
-            dibujar();
+            nuevaFrase.value = "";
             input.value = "";
-            input.focus();
-            contador++;
-            console.log(contador)
+            button.disabled = true;
+
+        }
+        while (contador <= 8) {
+            if (contador == 8) {
+                escribirTexto(400, 100, "Fin del Juego");
+                escribirTexto(400, 150, "La palabra a adivinar era: ");
+                escribirTexto(400, 200, frase);
+                input.disabled = true;
+                ver.disabled = true;
+                button.disabled = true;
+            }
+
+            if (t == false) {
+                dibujar();
+                input.value = "";
+                input.focus();
+                contador++;
+
+            }
+
+            break;
         }
 
-        break;
     }
 }
 
@@ -138,7 +157,7 @@ function comenzar() {
     pantalla.width = pantalla.width;
     x = 10;
     for (var i = 1; i <= frase.length; i++) {
-        linea(x, 350, x + 30, 350, "black", 5);
+        linea(x, 350, x + 30, 350, "rgba(0, 255, 195, 0.64)", 5);
         x = x + 40;
     }
     button.disabled = true;
@@ -148,10 +167,10 @@ function comenzar() {
 }
 
 function orca() {
-    linea(100, 250, 280, 250, "black", 8);
-    linea(190, 50, 190, 250, "black", 8);
-    linea(150, 50, 330, 50, "black", 8);
-    linea(330, 50, 330, 80, "black", 8);
+    linea(100, 250, 280, 250, "white", 8);
+    linea(190, 50, 190, 250, "white", 8);
+    linea(150, 50, 330, 50, "white", 8);
+    linea(326, 50, 326, 80, "white", 8);
 }
 
 function reinicio() {
@@ -166,10 +185,11 @@ function reinicio() {
     x = 100;
     frase = "";
     resultado = [];
+    nuevaFrase.focus();
 }
 
 
 button.onclick = comenzar;
 ver.onclick = adivinar;
-agregar.onclick = registro;
+agregar.onclick = validar;
 reiniciar.onclick = reinicio;
